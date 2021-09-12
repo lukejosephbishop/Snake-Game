@@ -1,0 +1,127 @@
+html{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.start-game{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    
+}
+.start-game button {
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: green;
+    color: whitesmoke;
+    padding: 1rem;
+    font-weight: normal;
+    
+    
+  
+}
+
+.start-game button:hover {
+    background-color: rgb(4, 148, 4);
+    color: whitesmoke;
+    padding: 1rem;
+    
+}
+.directions {
+    font-size: 15px;
+    line-height: 1.5rem;
+    color:whitesmoke;
+    background-color: rgb(17, 17, 17);
+    padding-right: 10px;
+    
+}
+body {
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: fit-content;
+    width: fit-content;
+
+}
+
+
+header {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 3.5rem;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    margin-top: 0;
+    
+}
+
+.snake-game{
+    order: 3;
+    background-color: silver;
+    background-image: 
+    linear-gradient(335deg, #b00 23px, transparent 23px),
+    linear-gradient(155deg, #d00 23px, transparent 23px),
+    linear-gradient(335deg, #b00 23px, transparent 23px),
+    linear-gradient(155deg, #d00 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    padding: 50px;
+    padding-bottom: 0%;
+}
+
+.score-display{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 630px;
+    height: 100px;
+    background-color: rgb(110, 85, 43);
+    border: 5px solid rgb(95, 76, 43);;
+
+}
+
+
+h1{
+    color: whitesmoke;
+    background-color: black;
+    width: 270px;
+    font-size: 25px;
+    padding-inline-start: 10px;
+    font-family:Tahoma, sans-serif;
+    font-stretch:extra-condensed;
+}
+
+
+
+.board {
+    width: 630px;
+    height: 630px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid rgb(18, 47, 15);
+    background: rgb(54, 122, 42);
+}
+
+.cell {
+    flex: 0 0 29.5px;
+    height: 29.5px;
+    border: 1px solid rgb(54, 122, 42);
+}  
